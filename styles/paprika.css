@@ -1,0 +1,110 @@
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+input[type="text"],
+textarea {
+  border: 2px solid rgb(0, 204, 255);
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+.big_photo {
+  width: 250px;
+  height: 250px;
+}
+
+.add_photo_button {
+  border: 2px solid;
+  border-radius: 30px;
+}
+
+.delete_button {
+  background-color: red;
+  color: white;
+}
+
+.f-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 10px 0px 10px;
+}
+
+.fontsize4 {
+  font-size: 15px;
+}
+
+.fontsize5 {
+  font-size: 17px;
+}
+
+.fontsize6 {
+  font-size: 19px;
+}
+
+@media screen and (min-width: 800px) {
+  .photo_group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 1px 0px 1px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .normal_photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .big_photo {
+    width: 450px;
+    height: 450px;
+  }
+
+  .photo_group {
+    overflow: auto;
+    scroll-snap-type: x;
+    display: flex;
+  }
+  .area {
+    scroll-snap-align: start;
+    height: 65vh;
+    width: 100vw;
+    flex: none;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .photo_group {
+    overflow: auto;
+    scroll-snap-type: x;
+    display: flex;
+  }
+  .area {
+    scroll-snap-align: start;
+    height: 50vh;
+    width: 100vw;
+    flex: none;
+    text-align: center;
+  }
+
+  .big_photo {
+    width: 320px;
+    height: 320px;
+  }
+}
